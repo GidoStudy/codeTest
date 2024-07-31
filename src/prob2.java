@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class prob2 {
     public static void main(String[] args) {
 
@@ -6,10 +8,7 @@ public class prob2 {
     public static class Solution{
         public double solution(int[] arr) {
             double answer = 0;
-            int sum = 0 ;
-            for (int i : arr) {
-                sum += i;
-            }
+            int sum = Arrays.stream(arr).sum();
             return (double) sum / arr.length;
         }
     }
