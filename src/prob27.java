@@ -1,10 +1,11 @@
 import java.sql.Array;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class prob27 {
     public static void main(String[] args) {
-
+    System.out.println(LocalDateTime.now());
     }
 
     int gcd(int n, int m) {
